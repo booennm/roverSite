@@ -1,0 +1,190 @@
+html {
+    height: 100%;
+
+    font-family: "Teko", sans-serif;
+    font-size: 2vw;
+    letter-spacing: 3px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-image: linear-gradient(black, #1F0B49);
+    color: white;
+}
+
+#content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: #8469FF;
+    border: none;
+    border-radius: 2px;
+    color: white;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+
+    font-family: "Teko", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 4px 4px 0 black;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#perseverance {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+#back {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#back:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h1 {
+    color: #8469FF;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.selection h1 {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 0.8em;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: lighter;
+}
+
+#loading {
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
+}
+
+#img {
+    display: flex;
+    align-items: center;
+}
+
+i {
+    display: inline;
+    text-align: center;
+}
+
+i>span {
+    display: block;
+    font-family: "Teko", sans-serif;
+    font-size: 0.5em;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+img {
+    height: 60vh;
+    width: 90vh;
+    display: inline;
+    object-fit: contain;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+footer {
+    min-height: fit-content;
+    font-size: 2vh;
+    margin-top: auto;
+    padding-left: 1em;
+    background-color: black;
+    color: #A6A6A6;
+}
+
+footer p:first-child {
+    font-size: 3vh;
+    color: white;
+    display: block;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+    img {
+        width: 70vw;
+        padding-top: 0;
+    }
+    
+    #img {
+        display: block;
+        width: 80vw;
+    }
+
+    i>span {
+        font-size: 0.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 3vw;
+    }
+
+    button {
+        display: block;
+    }
+
+    #perseverance {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer p:first-child {
+        font-size: 2vh;
+    }
+}
